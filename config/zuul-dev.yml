@@ -1,6 +1,11 @@
 spring:
   application:
     name: zuul
+  rabbitmq:
+    host: 192.168.64.5
+    port: 5672
+    username: admin
+    password: admin
 
 server:
   port: 3001
@@ -33,7 +38,7 @@ hystrix:
         isolation:
           thread:
             timeoutInMilliseconds: 500  
-#m.e.w.e.i  快速写出
+#m.e.w.e.i  蹇�熷啓鍑�
 management:     
   endpoints:
     web:
